@@ -8,5 +8,6 @@ const names = ["Ravi", "Hemanth", "George", "Raju", "hitesh", "Bheem", "Edson", 
 
 // splice - add or remove or replace the elements
 
-names.splice(6, 1)
+names.splice(6, 0, "ramu")
+names.splice(6, 1, "randomName")
 console.log(names)
