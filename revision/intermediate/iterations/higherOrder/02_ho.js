@@ -19,5 +19,6 @@ map.set("us", "united states of america")
 map.set("fn", "france")
 
 for (const key in map) {
-  console.log(key)
+  console.log(key) // this will not give an output because map is not iterable.
 }
+
