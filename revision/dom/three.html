@@ -9,6 +9,8 @@
   
 </body>
 <script>
+  // creating element
+  // still in memory, so not displaying on browser
   const div = document.createElement("div")
   console.log(div)
   div.className = "divClass"
@@ -19,6 +21,8 @@
   div.appendChild(textnode)
   div.style.backgroundColor = "green"
   div.style.padding = "15px"
+
+  // appending to document
   document.body.appendChild(div)
 </script>
 </html>
