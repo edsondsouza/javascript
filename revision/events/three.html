@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asunc project</title>
+</head>
+<body>
+  <h1>setInterval revision</h1>
+  <button id="start">Start</button>
+  <button id="stop">Stop</button>
+</body>
+<script>
+  const intervalID = function(str){
+    console.log(`${str} Edson!`, Date.now())
+  }
+
+  let intervalclear;
+
+  document.querySelector('#start').addEventListener('click', function(){
+    intervalclear = setInterval(intervalID, 2000, "hello")
+    console.log("STARTED")
+  })
+
+  document.querySelector('#stop').addEventListener('click', function(){
+    clearInterval(intervalclear)
+    console.log("STOPPED")
+  })
+</script>
+</html>
