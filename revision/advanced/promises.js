@@ -1,7 +1,7 @@
 // creating promise
 // const promiseOne = new Promise(function (resolve, reject) {
-  // Async code
-  // DB connection, cryptography, networking request
+// Async code
+// DB connection, cryptography, networking request
 //   setTimeout(function () {
 //     console.log("Async code executed");
 //     resolve();
@@ -94,13 +94,11 @@ promiseFour
 // getUsers()
 
 // get users using then-catch
-fetch('https://api.github.com/users/edsondsouza')
-.then((response)=>{
-  return response.json()
-})
-.then((data)=> {
-  console.log(data)
-})
-.catch((error)=>
-  console.log(error)
-)
+fetch("https://api.github.com/users/edsondsouza")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => console.log(error));
