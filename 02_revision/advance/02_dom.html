@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Revision</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <h1>DOM Revision</h1>
+    <div class="parent">
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thursday</div>
+      <div class="day">Friday</div>
+    </div>
+  </body>
+  <script>
+    const parent = document.querySelector(".parent");
+    // console.log(parent);
+    // console.log(parent.children); //HTML collection
+
+    // for (let index = 0; index < parent.children.length; index++) {
+    //   console.log(parent.children[index].innerHTML);
+    // }
+
+    // console.log(parent.children[0].innerHTML)
+
+    // console.log(parent.children[0].style.color = "orange")
+
+    // console.log(parent.firstElementChild.innerHTML)
+
+    // console.log(parent.lastElementChild.innerHTML)
+
+    // child to parent
+    const dayone = document.querySelector(".day");
+    // console.log(dayone.innerText)
+    // console.log(dayone.parentElement)
+    // console.log(dayone.parentElement.innerHTML)
+    console.log(dayone.nextElementSibling.innerHTML);
+    console.log(parent.childNodes); // nodelist
+  </script>
+</html>
