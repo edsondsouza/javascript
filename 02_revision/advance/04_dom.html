@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Revision is Important</title>
+</head>
+<body style="background-color: #212121; color: #fff">
+    <h1>Editing elements using DOM</h1>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addingLanguage(lang){
+        const element = document.createElement('li')
+        const textinsideli = document.createTextNode(lang)
+        element.appendChild(textinsideli)
+        document.querySelector('.language').appendChild(element)
+    }
+    addingLanguage('TypeScript')
+    addingLanguage('Python')
+
+    // edit
+    const secondLang = document.querySelector('li:nth-child(3)')
+    // console.log(secondLang.innerHTML)
+    const newlang = document.createElement('li')
+    newlang.textContent = "Mojo"
+    secondLang.replaceWith(newlang)
+
+    const firstLang = document.querySelector('li:first-child')
+    firstLang.outerHTML = "<li>JAVASCRIPT</li>"
+
+    const removeElement = document.querySelector('li:last-child')
+    removeElement.remove()
+</script>
+</html>
