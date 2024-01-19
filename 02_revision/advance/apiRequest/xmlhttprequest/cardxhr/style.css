@@ -1,0 +1,55 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+    color: #fff;
+}
+
+.container {
+    max-width: 300px; /* Adjust as needed */
+    margin: 50px auto;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    width: 250px;
+    height: 250px; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container without stretching */
+    border-radius: 50%;
+    display: block; /* Remove any default inline spacing */
+    margin: 0 auto; /* Center the image */
+}
+
+.personalinformation {
+    margin-top: 20px;
+}
+
+.username {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.moreinformation {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.visitProfile {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.visitProfile:hover {
+    background-color: #45a049;
+}
