@@ -24,7 +24,7 @@ xhr.onreadystatechange = function(){
 
         visit.addEventListener('click', function(){
             // window.location.href = data.url
-            window.open(usergithub, '_black')
+            window.open(usergithub, '_blank')
         })
     }
 }
