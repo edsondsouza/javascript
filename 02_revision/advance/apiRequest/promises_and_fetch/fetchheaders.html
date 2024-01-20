@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Learn to set request header in Fetch API</title>
+  </head>
+  <body>
+    <script>
+      fetch(`https://famous-quotes4.p.rapidapi.com/random`, {
+        method: "GET",
+        headers: {
+			'X-RapidAPI-Key': 'your-rapidapi-key',
+			'X-RapidAPI-Host': 'famous-quotes4.p.rapidapi.com',
+		},
+      })
+      .then(function(response){
+        return response.json()
+      })
+      .then(function(data){
+        console.log(data)
+      })
+      .catch(function(error){
+        console.log(error)
+      })
+    </script>
+  </body>
+</html>
