@@ -1,0 +1,2 @@
+console.log(typeof undefined); // o/p: undefined - undefined in javascript returns undefined. This is because undefined is a type in javascript. But incase of null, it is a standalone value.
+console.log(typeof null); // o/p: object - null in javascript is an object. Few developers call it as the error in javascript. This can be asked in interview **Remember**.
